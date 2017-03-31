@@ -1,23 +1,6 @@
 @font-face {
-    font-family: "SupriaSans";
-    src: url("../font/SupriaSans-Black.otf") format("opentype");
-    src: url("../font/SupriaSans-BlackItalic.otf") format("opentype");
-    src: url("../font/SupriaSans-BlackOblique.otf") format("opentype");
-    src: url("../font/SupriaSans-Bold.otf") format("opentype");
-    src: url("../font/SupriaSans-BoldItalic.otf") format("opentype");
-    src: url("../font/SupriaSans-BoldOblique.otf") format("opentype");
-    src: url("../font/SupriaSans-Heavy.otf") format("opentype");
-    src: url("../font/SupriaSans-HeavyItalic.otf") format("opentype");
-    src: url("../font/SupriaSans-HeavyOblique.otf") format("opentype");
-    src: url("../font/SupriaSans-Light.otf") format("opentype");
-    src: url("../font/SupriaSans-LightItalic.otf") format("opentype");
-    src: url("../font/SupriaSans-LightOblique.otf") format("opentype");
-    src: url("../font/SupriaSans-Medium.otf") format("opentype");
-    src: url("../font/SupriaSans-MediumItalic.otf") format("opentype");
-    src: url("../font/SupriaSans-MediumOblique.otf") format("opentype");
-    src: url("../font/SupriaSans-Regular.otf") format("opentype");
-    src: url("../font/SupriaSans-RegularItalic.otf") format("opentype");
-    src: url("../font/SupriaSans-RegularOblique.otf") format("opentype");
+    font-family: "SupriaSans";    
+    src: url("../font/SupriaSans-Regular.otf") format("opentype");   
 }
 
 body {
