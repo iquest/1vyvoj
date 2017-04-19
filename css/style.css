@@ -143,6 +143,11 @@ body {
   font-weight: 300;
 }
 
+.title-2 a.black-color {
+  color: black;
+
+}
+
 .part-2 {
   margin: 0 -15px;
 	background-color: #ffffff;
@@ -151,14 +156,14 @@ body {
 	vertical-align: middle;
   clear: both;
   position: relative;
-  padding-bottom: 35px;
+  padding: 35px 0;
 }
 
 .part-2.button {
   padding-top: 35px;
 }
 
-.part-2.button::before {
+/*.part-2.button::before {
   content: '';
   width: 100%;
   height: 51px;
@@ -166,7 +171,7 @@ body {
   background-size: contain;
   position: absolute;
   top: -51px;
-}
+}*/
 
 
 .part-2 p {
@@ -182,6 +187,11 @@ body {
 .part-4 {
   padding: 30px 0 40px;
 	background-color: #ffffff;
+}
+
+.part-5 {
+  padding: 30px 0 40px;
+	background-color: #f5fbff;
 	padding-bottom: 40px;
 }
 
@@ -440,13 +450,16 @@ animation-duration:2s;
     }
 }
 
-@media screen and (min-height: 768px) and (min-width:992px) {
+@media screen and (min-height: 600px) and (min-width:992px) {
   .part-1 {
-    height: 100vh;
+    height: calc(100vh - 283px);
     position: relative;
     overflow: hidden;
   }
-  .part-2.button {
+  .icons > div {
+    height: 200px;
+  }
+  /*.part-2.button {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -470,5 +483,5 @@ animation-duration:2s;
     bottom: -51px;
     transform: rotateX(180deg);
     -webkit-transform: rotateX(180deg);
-  }
+  }*/
 }
