@@ -200,7 +200,7 @@ h1 {
   border: none;
   background-color: #00DDD0;
   margin-left: 0px;
-  width: 2.3em;
+  width: 3em;
   height: 3px;
 }
 
@@ -435,6 +435,13 @@ a.btn-ghost:hover, a.btn-ghost:active, a.btn-ghost:focus {
   background-size: 60px 60px;
   height: 60px;
   width: 60px;
+  border:none;
+  outline: none !important;
+}
+
+#arrow:focus {
+  border:none;
+  outline: none;
 }
 
 .arrow {
@@ -442,6 +449,7 @@ a.btn-ghost:hover, a.btn-ghost:active, a.btn-ghost:focus {
   bottom: 20px;
   z-index: 101;
   right: 40px;
+  /*border:none;*/
 }
 
 .arrow .ico-shadow {
