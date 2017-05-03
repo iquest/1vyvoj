@@ -210,6 +210,7 @@ h1 {
 }
 
 .part-5 {
+  display: none;
   padding: 60px 0 50px;
 	background-color: #ffffff;
 }
@@ -300,7 +301,7 @@ a.contact, a.contact:hover, a.contact:visited {
   background-color: #22262B;
 }
 
-.glyphicon {
+.glyphicon-footer {
 	float: none;
 	padding-top: 20px;
 }
@@ -427,6 +428,13 @@ a.btn-ghost:hover, a.btn-ghost:active, a.btn-ghost:focus {
     color: #fff !important;
     background-color: #a0dbd1 !important;
     outline: none !important;
+}
+
+#arrow {
+  background-image: url('../img/arrow-down.png');
+  background-size: 60px 60px;
+  height: 60px;
+  width: 60px;
 }
 
 .arrow {
