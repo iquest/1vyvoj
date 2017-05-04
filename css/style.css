@@ -171,6 +171,17 @@ h1 {
   padding: 60px 0 50px;
 }
 
+.part-2-2 {
+  margin: 0 -15px;
+	background-color: #ffffff;
+	text-align: center;
+	z-index: 100 !important;
+	vertical-align: middle;
+  clear: both;
+  position: relative;
+  padding: 0px 0 20px;
+}
+
 .part-2.button {
   padding-top: 35px;
 }
