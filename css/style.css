@@ -542,11 +542,11 @@ animation-duration:2s;
     }
 
     #map {
-      height: 200px;
+      /*height: 200px;*/
     }
 
     .contact.v-center {
-      margin-bottom: 20px;
+      /*margin-bottom: 20px;*/
     }
 }
 
