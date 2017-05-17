@@ -329,8 +329,8 @@ p {
 }
 
 .logo {
-  height: 60px;
- /* margin-top: 10px;*/
+  height: 80px;
+  margin-top: 20px;
  /* padding: 0 10px;*/
 	/*position: absolute;*/
 }
