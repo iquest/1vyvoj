@@ -1,4 +1,23 @@
 $(document).ready(function(){
+  
+  $('#btnStats1').on('click',function(){
+    // if($('#stats1').css('display')!='none'){
+    //   $('#stats2').show().siblings('div').hide();
+    // }else if($('#stats2').css('display')!='none'){
+      $('#stats1').show().siblings('div').hide();
+      $('#btnStats1').removeClass("unactive");
+      $('#btnStats2').addClass("unactive");
+    // }
+  });
+  $('#btnStats2').on('click',function(){
+    // if($('#stats1').css('display')!='none'){
+      $('#stats2').show().siblings('div').hide();
+      $('#btnStats2').removeClass("unactive");
+      $('#btnStats1').addClass("unactive");
+    // }else if($('#stats2').css('display')!='none'){
+    //   $('#stats1').show().siblings('div').hide();
+    // }
+  });
 
 	var button = $('#button');
   var offsetButton = button.offset();

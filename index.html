@@ -32,6 +32,8 @@
 	<!-- End Google Tag Manager (noscript) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
 	<script src="js/script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
 <div class="container-fluid">
 	<a href="#prinasime"><div id="arrow" class="arrow animated bounce ico-shadow center-block"></div></a>
 	<!--<a href="https://www.iquest.cz/" class="logo"><img src="img/iquest.png" class="img-responsive"></a>-->
@@ -163,9 +165,36 @@
 	<!--<a class="btn btn-ghost btn-lg btn-go-iquest" href="https://www.iquest.cz/">Přejít na web <img src="img/logo4.png" class="img-responsive center-block logo-button"></a>-->
 	<div id="stats" class="row part-5">
 		<div class="col-xs-offset-1 col-xs-10 text-center">
+			<h1>Kolik ušetřím hybridním vývojem?</h1><br>
+			<a class="btn btn-ghost btn-lg btn-go-iquest stats" id="btnStats1">Graf</a>
+			<a class="btn btn-ghost btn-lg btn-go-iquest unactive stats" id="btnStats2">Tabulka</a>
 			<div class="row">
-				<div data-aos="fade-right" class="col-md-6 col-xs-12"><img src="img/stats1.png" class="img-responsive center-block"></img></div>
-				<div data-aos="fade-left" class="col-md-6 col-xs-12"><img src="img/stats2.png" class="img-responsive center-block"></img></div>
+				<div id="stats1">
+					<div data-aos="fade-up" class="col-md-offset-2 col-md-4 col-xs-12">
+					<!--<img src="img/stats2.png" class="img-responsive center-block"></img>-->
+					<canvas id="stats11" width="100%" height="100%"></canvas>
+					</div>
+					<div data-aos="fade-up" class="col-md-4 col-xs-12">
+					<!--<img src="img/stats1.png" class="img-responsive center-block"></img>-->
+					<canvas id="stats12" width="100%" height="100%"></canvas>
+					</div>
+				</div>
+				<div id="stats2" data-aos="fade-up" class="col-md-offset-4 col-md-4 col-xs-12">
+					<table class="table table-striped">
+						<tr><th></th><th>Native</th><th>Hybrid</th></tr>
+						<tr><td>Vysoká rychlost</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
+						<tr><td>Práce offline</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
+						<tr><td>Dostupnost</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
+						<tr><td>Uživatelské rozhraní</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
+						<tr><td>Čistá grafika a animace</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
+						<tr><td>Využití hardware zařízení</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
+						<tr><td>Výkon</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
+						<tr><td>Dotykové ovládaní</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
+						<tr><td>Cena</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
+						<tr><td>Jednoduchá údržba</td><td><span class="glyphicon glyphicon-usd"></span><span class="glyphicon glyphicon-usd"></span><span class="glyphicon glyphicon-usd"></span><span class="glyphicon glyphicon-usd"></span></td><td><span class="glyphicon glyphicon-usd"></span><span class="glyphicon glyphicon-usd"></span></td></tr>
+						<tr><td>Možnost použití na více platformách</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
+					</table>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -258,6 +287,89 @@ function initMap() {
 	});
 }
 
+</script>
+<script type="text/javascript">
+
+// window.onload = function () {
+var ctx1 = document.getElementById("stats11");
+var myChart1 = new Chart(ctx1, {
+    type: 'bar',
+    data: {
+        xLabels: ["Vývoj", "Testovaní", "Nasazení", "Údržba", "Update"],
+        yLabels: ["Vývoj", "Testovaní", "Nasazení", "Údržba", "Update"],
+        datasets: [{
+            label: 'Web, IOS, Android',
+            data: [60, 14, 4, 15, 30],
+            backgroundColor: 'rgb(5, 175, 157)'
+        }]
+    },
+    options: {
+        title: {
+        	fontSize: 30,
+            display: true,
+            text: 'Hybrid'
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    max: 70,
+                    min: 0,
+                    stepSize: 10
+                },
+                scaleLabel: {
+					display: true,
+					labelString: 'Dnů'
+				}
+            }]
+        }
+    }
+});
+
+var ctx2 = document.getElementById("stats12");
+var myChart2 = new Chart(ctx2, {
+    type: 'bar',
+    data: {
+        xLabels: ["Vývoj", "Testovaní", "Nasazení", "Údržba", "Update"],
+		yLabels: ["aaaaaaa", "aa"],
+        datasets: [
+        {
+            label: "Web",
+            data: [60, 10, 1, 15, 30],
+            backgroundColor: 'rgb(228, 231, 164)'
+        },
+        {
+            label: "IOS",
+            data: [60, 10, 2, 15, 30],
+            backgroundColor: 'rgb(159, 218, 208)'
+        },
+        {
+            label: "Android",
+            data: [60, 10, 2, 15, 30],
+            backgroundColor: 'rgb(99, 207, 229)'
+        }
+		]
+    },
+    options: {
+        title: {
+        	fontSize: 30,
+            display: true,
+            text: 'Classic development'
+        },
+        scales: {
+            yAxes: [{
+                ticks: {
+                    max: 70,
+                    min: 0,
+                    stepSize: 10
+                },
+                scaleLabel: {
+					display: true,
+					labelString: 'Dnů'
+				}
+            }]
+        }
+    }
+});
 </script>
 <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 <script>

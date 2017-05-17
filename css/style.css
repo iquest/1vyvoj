@@ -420,9 +420,64 @@ p {
     height: 42px;
 }
 
+.unactive {
+    background: none !important;
+    /*border: 2px solid #00DDD0 !important;*/
+    color: #00DDD0 !important;
+}
+
+#stats1{
+  
+}
+
+#stats2{
+  display: none;
+}
+
+.stats {
+  font-weight: 600;
+  border: 2px solid #00DDD0 !important;
+  margin: 25px;
+}
+
+.table-striped {
+  font-size: 1.15em !important;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+  background-color: #e9f3f5 !important;
+}
+
+.table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+    border-top: none !important;
+}
+
+.table > tbody > tr:first-child, .table > tfoot > tr:first-child, .table > thead > tr:first-child {
+    background-color: #94a1a7 !important;
+    color: #ffffff !important;
+}
+
+.table > tbody > tr > td:first-child, .table > tfoot > tr > td:first-child, .table > thead > tr > td:first-child {
+    text-align: left !important;
+}
+
+.table > tbody > tr > th, .table > tfoot > tr > th, .table > thead > tr > th {
+    text-align: center !important;
+}
+
+.fa-check-circle:before {
+    color: #11ad9c !important;
+    font-size: 1.5em !important;
+}
+
+.glyphicon-usd:before {
+    color: #11ad9c !important;
+    font-size: 1.2em !important;
+}
+
 a.btn-ghost {
     color: #ffffff;
-    background-color: #00DDD0 !important;
+    background-color: #00DDD0;
     border-radius: 60px;
     letter-spacing: 1px !important;
     font-size: 1.3em !important;
