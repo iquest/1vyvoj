@@ -54,7 +54,7 @@
 		</div>
 		<div class="col-md-offset-2 col-md-8 col-xs-12">
 			<!--<div class="row"><div class="col-xs-12"><div class="ico-shadow center-block"><img src="img/zarovka.png" class="img-responsive center-block"></div></div></div>-->
-			<div class="row"><div class="col-xs-12"><h1 class="title-1" data-aos="fade-up">Vyvíjíme mobilní aplikace <br/> nové generace</h1></div></div>
+			<div class="row"><div class="col-xs-12"><h1 class="title-1" data-aos="fade-up">Mobilní aplikace <br/> nové generace</h1></div></div>
 			<div class="row">
 				<div class="col-md-offset-4 col-md-4 col-xs-offset-2 col-md-8">
 					<div class="row os">
@@ -172,10 +172,12 @@
 				<div id="stats1">
 					<div data-aos="fade-up" class="col-md-offset-2 col-md-4 col-xs-12">
 					<!--<img src="img/stats2.png" class="img-responsive center-block"></img>-->
+					<h2>Vývoj aplikaci nové generace<br>platíte jednou</h2>
 					<canvas id="stats11" width="100%" height="100%"></canvas>
 					</div>
 					<div data-aos="fade-up" class="col-md-4 col-xs-12">
 					<!--<img src="img/stats1.png" class="img-responsive center-block"></img>-->
+					<h2>Nativní vývoj aplikaci<br>platíte vícekrát</h2>
 					<canvas id="stats12" width="100%" height="100%"></canvas>
 					</div>
 				</div>
@@ -218,7 +220,8 @@
 				<div class="row">
 					<div class="col-xs-12">
 						<h1>Kontakty</h1>
-						<hr class="hr-contact">
+						<!--<hr class="hr-contact">-->
+						<a class="btn btn-ghost btn-lg btn-go-iquest" href="https://www.iquest.cz/">Přejít na web <img src="img/logo4.png" class="img-responsive center-block logo-button"></a>
 					</div>
 				</div>
 				<div class="row">
@@ -296,7 +299,6 @@ var myChart1 = new Chart(ctx1, {
     type: 'bar',
     data: {
         xLabels: ["Vývoj", "Testovaní", "Nasazení", "Údržba", "Update"],
-        yLabels: ["Vývoj", "Testovaní", "Nasazení", "Údržba", "Update"],
         datasets: [{
             label: 'Web, IOS, Android',
             data: [60, 14, 4, 15, 30],
@@ -304,17 +306,18 @@ var myChart1 = new Chart(ctx1, {
         }]
     },
     options: {
-        title: {
-        	fontSize: 30,
-            display: true,
-            text: 'Hybrid'
-        },
+        // title: {
+        // 	fontFamily: 'Raleway',
+        // 	fontSize: 30,
+        //     display: true,
+        //     text: 'Vývoj aplikaci nové generace platíte jednou'
+        // },
         scales: {
             yAxes: [{
                 ticks: {
-                    max: 70,
-                    min: 0,
-                    stepSize: 10
+                    max: 200,
+                    min: 0
+                    // stepSize: 20
                 },
                 scaleLabel: {
 					display: true,
@@ -330,37 +333,39 @@ var myChart2 = new Chart(ctx2, {
     type: 'bar',
     data: {
         xLabels: ["Vývoj", "Testovaní", "Nasazení", "Údržba", "Update"],
-		yLabels: ["aaaaaaa", "aa"],
         datasets: [
         {
             label: "Web",
             data: [60, 10, 1, 15, 30],
-            backgroundColor: 'rgb(228, 231, 164)'
+            backgroundColor: 'rgb(228, 231, 164)',
+            stack: 1
         },
         {
             label: "IOS",
             data: [60, 10, 2, 15, 30],
-            backgroundColor: 'rgb(159, 218, 208)'
+            backgroundColor: 'rgb(159, 218, 208)',
+            stack: 1
         },
         {
             label: "Android",
             data: [60, 10, 2, 15, 30],
-            backgroundColor: 'rgb(99, 207, 229)'
+            backgroundColor: 'rgb(99, 207, 229)',
+            stack: 1
         }
 		]
     },
     options: {
-        title: {
-        	fontSize: 30,
-            display: true,
-            text: 'Classic development'
-        },
+        // title: {
+        // 	fontSize: 30,
+        //     display: true,
+        //     text: 'Classic development'
+        // },
         scales: {
             yAxes: [{
                 ticks: {
-                    max: 70,
-                    min: 0,
-                    stepSize: 10
+                    max: 200,
+                    min: 0
+                    // stepSize: 20
                 },
                 scaleLabel: {
 					display: true,
