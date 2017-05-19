@@ -129,11 +129,11 @@ h1 {
   -webkit-transform: translateX(-50%) translateY(-50%);
 }
 .part-1 {
-	height: 90vh;
+	height: 100vh;
 	/*background-color: #f1f1f1;*/
 	/*background-color: #f7fdff;*/
 	text-align: center;
-	padding-top: 10vh;
+	padding-top: 0vh;
 }
 
 .icons {
@@ -143,6 +143,14 @@ h1 {
 .title-1 {
 	padding-bottom: 15px;
 	font-size: 6em;
+  line-height: 1.3;
+	font-weight: 300;
+  color: #3c3c3c;
+}
+
+.subtitle-1 {
+  padding-bottom: 15px;
+	font-size: 3em;
   line-height: 1.3;
 	font-weight: 300;
   color: #3c3c3c;
@@ -613,7 +621,7 @@ animation-duration:2s;
 
 @media screen and (min-height: 600px) and (min-width:992px) {
   .part-1 {
-    height: calc(100vh - 180px);
+    height: calc(100vh - 100px);
     position: relative;
     overflow: hidden;
   }
