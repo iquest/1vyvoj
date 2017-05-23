@@ -353,7 +353,11 @@ p {
 }
 .v-center {
 	display: flex;
-    align-items: center;
+  align-items: center;
+}
+
+.full-width {
+  width: 100%;
 }
 
 .ico-wrapper {
