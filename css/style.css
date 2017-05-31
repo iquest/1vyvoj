@@ -229,11 +229,31 @@ h1 {
 }
 
 .part-5 {
-  display: none;
   padding: 60px 0 50px;
 	background-color: #ffffff;
 }
 
+.part-5 .info {
+  color: #94a1a7;
+  font-size: .9em;
+  margin: 20px 0 60px;
+}
+
+.part-5 .hybrid:before,
+.part-5 .native:before {
+  content: 'Cena/čas';
+  position: absolute;
+  left: -20px;
+  top: 39%;
+  transform: rotate(-90deg);
+  color: #636363;
+  font-size: .9em;
+}
+
+.part-5 .native-hybrid-table {
+  margin: 0 auto;
+  float: none;
+}
 .part-6 {
   padding: 60px 0 50px;
 	background-color: #00A6DD;
@@ -467,7 +487,7 @@ p {
 }
 
 #stats1{
-  
+
 }
 
 #stats2{
@@ -476,8 +496,8 @@ p {
 
 .text-stats {
   white-space: nowrap;
-  vertical-align: bottom; 
-  height: inherit; 
+  vertical-align: bottom;
+  height: inherit;
 }
 
 .stats {

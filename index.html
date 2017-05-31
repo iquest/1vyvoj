@@ -159,19 +159,16 @@
 					<p>Přinášíme nový způsob vývoje mobilních aplikací. Tvoříme pouze 1 mobilní aplikaci, kterou nasazujeme jako nativní na Android, iPhone i web.</p>
 					<p>Tradiční způsob vývoje mobilních aplikací  využívá různé technologie pro různé platformy, HTML5/JavaScript pro web, Java pro Android a Objective-C pro iOS. Každá platforma obvykle vyžaduje vlastní tým pro vývoj. Každá aplikace se i při shodné funkcionalitě musí programovat znovu, je znovu testována a udržována. </p>
 					<p>Přinášíme výhody pro zákazníky, kteří chtějí vytvořit nativní aplikaci pro zařízení Android, iPhone i web a nechtějí platit 3 týmy. iQuest nabízí progresivní přístup pomocí hybridního vývoje. Hybridní aplikace od iQuest se chová jako nativní v každé platformě, jako webová na počítači. Vývoje nativních aplikací pro každou platformu zvlášť.</p>
-					<a class="btn btn-ghost btn-lg btn-go-iquest" id="stats-btn">Kolik ušetřím s hybridním vývojem?&nbsp;&nbsp; <span class="glyphicon glyphicon-menu-down"></span></a>
 				</div>
 			</div>
 		</div>
 	</div>
 	<!--<a class="btn btn-ghost btn-lg btn-go-iquest" href="https://www.iquest.cz/mobilni-aplikace-nove-generace/">Přejít na web <img src="img/logo4.png" class="img-responsive center-block logo-button"></a>-->
-	<div id="stats" class="row part-5">
+	<div class="row part-5">
 		<div class="col-xs-offset-1 col-xs-10 text-center">
 			<h1>Kolik ušetřím hybridním vývojem?</h1><br>
-			<a class="btn btn-ghost btn-lg btn-go-iquest stats" id="btnStats1">Graf</a>
-			<a class="btn btn-ghost btn-lg btn-go-iquest unactive stats" id="btnStats2">Tabulka</a>
 			<div class="row">
-				<div id="stats1">
+				<div>
 					<div class="row">
 						<div data-aos="fade-up" class="col-md-offset-2 col-md-4 col-xs-12">
 							<h2>Vývoj aplikaci nové generace<br>platíte jednou</h2>
@@ -180,38 +177,43 @@
 							<h2>Nativní vývoj aplikaci<br>platíte vícekrát</h2>
 						</div>
 					</div>
-					<div data-aos="fade-up" class="col-md-offset-2 col-md-4 col-xs-12">
+					<div data-aos="fade-up" class="col-md-offset-2 col-md-4 col-xs-12 hybrid">
 						<!--<img src="img/stats2.png" class="img-responsive center-block"></img>-->
 						<!--<h2>Vývoj aplikaci nové generace<br>platíte jednou</h2>-->
 						<canvas id="stats11" width="100%" height="100%"></canvas>
+						<div class="info">* Na základě interních vypočtu iQuest</div>
 					</div>
 					<div class="row hidden-md hidden-lg">
 						<div data-aos="fade-up" class="hidden-md hidden-lg col-xs-12">
 							<h2>Nativní vývoj aplikaci<br>platíte vícekrát</h2>
 						</div>
 					</div>
-					<div data-aos="fade-up" class="col-md-4 col-xs-12">
+					<div data-aos="fade-up" class="col-md-4 col-xs-12 native">
 						<!--<img src="img/stats1.png" class="img-responsive center-block"></img>-->
 						<!--<h2>Nativní vývoj aplikaci<br>platíte vícekrát</h2>-->
 						<canvas id="stats12" width="100%" height="100%"></canvas>
+						<div class="info">* Na základě interních vypočtu iQuest</div>
 					</div>
 					<!--<div class="row"><div class="col-md-offset-10 col-md-2 col-xs-12 text-stats">Na základě interních údajů od firmy iQuest</div></div>-->
 				</div>
-				<div id="stats2" data-aos="fade-up" class="col-md-offset-4 col-md-4 col-xs-12">
-					<table class="table table-striped">
-						<tr><th></th><th>Native</th><th>Hybrid</th></tr>
-						<tr><td>Vysoká rychlost</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
-						<tr><td>Práce offline</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
-						<tr><td>Dostupnost</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
-						<tr><td>Uživatelské rozhraní</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
-						<tr><td>Čistá grafika a animace</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
-						<tr><td>Využití hardware zařízení</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
-						<tr><td>Výkon</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
-						<tr><td>Dotykové ovládaní</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
-						<tr><td>Cena</td><td><span class="glyphicon glyphicon-usd"></span><span class="glyphicon glyphicon-usd"></span><span class="glyphicon glyphicon-usd"></span><span class="glyphicon glyphicon-usd"></span></td><td><span class="glyphicon glyphicon-usd"></span><span class="glyphicon glyphicon-usd"></span></td></tr>
-						<tr><td>Jednoduchá údržba</td><td></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
-						<tr><td>Možnost použití na více platformách</td><td></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
-					</table>
+				<div class="row">
+					<div data-aos="fade-up" class="col-md-5 col-xs-12 native-hybrid-table">
+						<table class="table table-striped">
+							<tr><th></th><th>Native</th><th>Hybrid</th></tr>
+							<tr><td>Vysoká rychlost</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
+							<tr><td>Práce offline</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
+							<tr><td>Dostupnost</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
+							<tr><td>Uživatelské rozhraní</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
+							<tr><td>Čistá grafika a animace</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
+							<tr><td>Využití hardware zařízení</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
+							<tr><td>Výkon</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
+							<tr><td>Dotykové ovládaní</td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
+							<tr><td>Cena</td><td><span class="glyphicon glyphicon-usd"></span><span class="glyphicon glyphicon-usd"></span><span class="glyphicon glyphicon-usd"></span><span class="glyphicon glyphicon-usd"></span></td><td><span class="glyphicon glyphicon-usd"></span><span class="glyphicon glyphicon-usd"></span></td></tr>
+							<tr><td>Jednoduchá údržba</td><td></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
+							<tr><td>Možnost použití na více platformách</td><td></td><td><i class="fa fa-check-circle" aria-hidden="true"></i></td></tr>
+						</table>
+						<div class="info">* Na základě interních vypočtu iQuest</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -323,7 +325,7 @@ function initMap() {
 
 function initMap2() {
 	// var mapCanvas2 = document.getElementById("map2");
-	
+
 	var map2 = new google.maps.Map(document.getElementById("map2"), {
 		streetViewControl: true,
 		mapTypeControl: true,
@@ -394,19 +396,19 @@ var myChart2 = new Chart(ctx2, {
         {
             label: "Web",
             data: [60, 10, 1, 15, 30],
-            backgroundColor: 'rgb(228, 231, 164)',
+            backgroundColor: '#ccc',
             stack: 1
         },
         {
             label: "IOS",
             data: [60, 10, 2, 15, 30],
-            backgroundColor: 'rgb(159, 218, 208)',
+            backgroundColor: '#b9b9b9',
             stack: 1
         },
         {
             label: "Android",
             data: [60, 10, 2, 15, 30],
-            backgroundColor: 'rgb(99, 207, 229)',
+            backgroundColor: '#afafaf',
             stack: 1
         }
 		]
