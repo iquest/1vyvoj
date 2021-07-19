@@ -14,7 +14,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-	<link rel="stylesheet" href="font/font-awesome/css/font-awesome.min.css">
+	<link rel="preload" href="font/font-awesome/css/font-awesome.min.css">
 	<!-- Google Tag Manager -->
 	<script>
 	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -78,7 +78,11 @@
 			</div>
 			<div class="row">
 				<div class="col-xs-12">
-					<img src="img/devices.png" class="img-responsive img-devices" data-aos="fade-up">
+					<picture>
+						<source srcset="img/devices.webp" type="image/webp">
+						<source srcset="img/devices.png" type="image/png">
+						<img alt="hero" class="img-responsive img-devices" src="img/devices.webp" data-aos="fade-up"></img>
+					</picture>
 				</div>
 			</div>
 		</div>
